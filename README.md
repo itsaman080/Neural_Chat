@@ -46,6 +46,20 @@ neuralchat/
 
 ---
 
+## 📸 Screenshots
+
+| ![layout](Screenshots/test1.png) | ![Action](Screenshots/test2.png) | ![Results](Screenshots/test3.png) |
+
+> 
+---
+
+## 🎬 Video Demo
+
+Watch a quick demo of the Neural_Chat in action:  
+[Demo Video](Screenshots/Demo.mp4)
+
+---
+
 ## Quick Start
 
 ### 1. Get a free Groq API key
