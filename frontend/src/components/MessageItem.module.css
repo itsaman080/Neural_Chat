@@ -1,0 +1,98 @@
+/* MessageItem.module.css */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  animation: fadeSlide 0.22s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+.userGroup { align-items: flex-end;   }
+.aiGroup   { align-items: flex-start; }
+
+.label {
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--text-3);
+  padding: 0 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 11px 15px;
+  border-radius: var(--radius);
+  line-height: 1.6;
+  font-size: 14px;
+  word-break: break-word;
+  white-space: pre-wrap;
+  box-shadow: var(--shadow-2);
+}
+
+.userBubble {
+  background: linear-gradient(135deg, var(--accent), #9a8cff 55%, #bda8ff);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.aiBubble {
+  background: linear-gradient(180deg, rgba(31,31,36,0.95), rgba(23,23,26,0.95));
+  border: 0.5px solid var(--border);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+
+/* ── Insight card ─────────────────────────────────── */
+
+.insightCard {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 70%;
+  background: linear-gradient(180deg, rgba(31,31,36,0.92), rgba(23,23,26,0.92));
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  box-shadow: var(--shadow-2);
+}
+
+.insightLabel {
+  font-size: 10px;
+  font-family: var(--mono);
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  flex-basis: 100%;
+  margin-bottom: 2px;
+}
+
+.badge {
+  font-size: 11px;
+  font-family: var(--mono);
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+
+/* ── Sentiment ────────────────────────────────────── */
+
+.sentimentPositive { color: var(--c-pos); background: var(--c-pos-bg); }
+.sentimentNeutral  { color: var(--c-neu); background: var(--c-neu-bg); }
+.sentimentNegative { color: var(--c-neg); background: var(--c-neg-bg); }
+
+/* ── Intent ───────────────────────────────────────── */
+
+.intentQuery     { color: var(--c-query);     background: var(--c-query-bg);     }
+.intentComplaint { color: var(--c-complaint); background: var(--c-complaint-bg); }
+.intentRequest   { color: var(--c-request);   background: var(--c-request-bg);   }
+.intentGreeting  { color: var(--c-greeting);  background: var(--c-greeting-bg);  }
+.intentOther     { color: var(--c-other);     background: var(--c-other-bg);     }

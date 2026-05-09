@@ -1,0 +1,79 @@
+/* ─────────────────────────────────────────────
+   index.css — Global styles & design tokens
+   ───────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Backgrounds */
+  --bg:           #0f0f11;
+  --bg-2:         #17171a;
+  --bg-3:         #1f1f24;
+  --bg-4:         #26262c;
+  --bg-5:         #2d2d35;
+
+  /* Text */
+  --text:         #e8e6e3;
+  --text-2:       #9a9897;
+  --text-3:       #5c5b5a;
+
+  /* Borders */
+  --border:       rgba(255, 255, 255, 0.08);
+  --border-2:     rgba(255, 255, 255, 0.14);
+
+  /* Accent (purple) */
+  --accent:       #7c6af7;
+  --accent-dim:   rgba(124, 106, 247, 0.15);
+  --accent-2:     #56c5ff;
+  --accent-3:     #ff7ad9;
+
+  /* Intent/sentiment badge colors */
+  --c-pos:        #3d9e70;  --c-pos-bg:  rgba(61,  158, 112, 0.14);
+  --c-neg:        #e05252;  --c-neg-bg:  rgba(224,  82,  82, 0.14);
+  --c-neu:        #c4914a;  --c-neu-bg:  rgba(196, 145,  74, 0.14);
+  --c-query:      #5b9cf6;  --c-query-bg:rgba(91,  156, 246, 0.14);
+  --c-complaint:  #e05252;  --c-complaint-bg: rgba(224, 82, 82, 0.14);
+  --c-request:    #a07cf5;  --c-request-bg:   rgba(160,124,245, 0.14);
+  --c-greeting:   #3d9e70;  --c-greeting-bg:  rgba(61, 158,112, 0.14);
+  --c-other:      #9a9897;  --c-other-bg:     rgba(154,152,151, 0.14);
+
+  /* Typography */
+  --font:   "IBM Plex Sans", sans-serif;
+  --mono:   "IBM Plex Mono", monospace;
+
+  /* Radii */
+  --radius:    14px;
+  --radius-sm: 8px;
+  --radius-xs: 6px;
+  --radius-xl: 20px;
+
+  /* Shadows */
+  --shadow-1: 0 10px 40px rgba(0,0,0,0.35);
+  --shadow-2: 0 6px 20px rgba(0,0,0,0.28);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(900px 400px at 20% -10%, rgba(124,106,247,0.22), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(86,197,255,0.18), transparent 55%),
+    radial-gradient(700px 500px at 30% 100%, rgba(255,122,217,0.12), transparent 60%);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 2px; }
