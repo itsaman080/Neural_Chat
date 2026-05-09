@@ -48,7 +48,9 @@ neuralchat/
 
 ## 📸 Screenshots
 
-| ![layout](Screenshots/test1.png) | ![Action](Screenshots/test2.png) | ![Results](Screenshots/test3.png) |
+|                                 |                                   |                                 |
+| ------------------------------- | --------------------------------- | ------------------------------- |
+| ![layout](Demo/Screenshot-1.png) | ![Action](Demo/Screenshot-2.png) | ![Results](Demo/Screenshot-3.png) |
 
 > 
 ---
@@ -56,7 +58,7 @@ neuralchat/
 ## 🎬 Video Demo
 
 Watch a quick demo of the Neural_Chat in action:  
-[Demo Video](Screenshots/Demo.mp4)
+[Demo Video](Demo/Demo-Neural-Chat.mov)
 
 ---
 
