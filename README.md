@@ -141,7 +141,7 @@ If the Groq key is missing, the backend falls back to basic rule‑based respons
 Create backend/.env from backend/.env.example:
 
 - GROQ_API_KEY — required for LLM responses
-- GROQ_MODEL — default `llama3-8b-8192` (recommended: `llama-3.1-8b-instant`)
+- GROQ_MODEL — (recommended: `llama-3.1-8b-instant`)
 - PORT — backend port (default `8000`)
 
 ---
